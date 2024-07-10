@@ -57,7 +57,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">[WIP]</span>I'm Hanna</h1>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm </span>Hanna</h1>
     <p>A curious being • "If it makes sense i'll do it"</p>
     <img src="/src/images/PartnerHanna.png" alt="profile-image" width="auto" height="500px">
     <div class="w3-tiny w3-text-grey"><p>Avatar by Nigel Lim</p></div>
@@ -67,7 +67,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">About Me</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Hanna Tan. Millenial. Based in Malaysia. Not sure what else to write here but this section only looks pretty with lots of text so im just trying my best to add words. 
+    <p>Hanna Tan. Millennial. Based in Malaysia. Not sure what else to write here but this section only looks pretty with lots of text so im just trying my best to add words. 
       Congrats for reading this far though i might as well let u know more. 
       Always a creative by heart but it aint getting the money i need to survive in this society so i ended up studying IT and eventually became a software engineer in the tech industry. 
       4 years in and i made a choice to switch to a Business Analyst because enabling the team and being the glue bring me more joy. Title be that but i mostly perform tasks of an Iteration Manager and Delivery Lead. 
@@ -118,7 +118,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <ul class="w3-ul w3-white w3-center">
           <li class="w3-dark-grey w3-xlarge w3-padding-32">Full-time job</li>
           <li class="w3-padding-16">Corporate slave</li>
           <li class="w3-padding-16">Me asking too many questions sometimes</li>
@@ -129,13 +129,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             <span class="w3-opacity">per month</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Hire me to nego</button>
+            <button class="w3-button w3-dark-grey w3-padding-large w3-hover-black" style="width: 95%;">Hire me to nego</button>
           </li>
         </ul>
       </div>
 
       <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <ul class="w3-ul w3-white w3-center">
           <li class="w3-dark-grey w3-xlarge w3-padding-32">Tip Jar</li>
           <li class="w3-padding-16">Token of Appreciation</li>
           <li class="w3-padding-16">Personalised gratitude from me</li>
@@ -146,7 +146,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             <span class="w3-opacity">or a subscription of $1 per month</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <a href="https://ko-fi.com/hanamiru"><button class="w3-button w3-white w3-padding-large w3-hover-black">Donate</button></li></ul></a>
+            <a href="https://ko-fi.com/hanamiru"><button class="w3-button w3-dark-grey w3-padding-large w3-hover-black" style="width: 95%;">Donate</button></li></ul></a>
           </li>
         </ul>
       </div>
@@ -160,7 +160,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>"You lose your iconic bottles across the globe... LMAO"</p><br>
     
     <img src="/src/images/PrincipalHaobinUpClose.png" alt="Avatar" class="w3-left w3-circle w3-margin-right w3-white" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Hao Bin Loh.</span> The Principal.</p>
+    <p><span class="w3-large w3-margin-right">HB L.</span> The Principal.</p>
     <p>"Your life my inspiration"</p>
   <!-- End About Section -->
   </div>
@@ -183,10 +183,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       </div>
     <!-- End photo grid -->
     </div>
-    <div class="w3-padding-16 w3-center">
+    <div class="w3-padding-16 w3-center w3-hide-small">
       <span>Browse more art at </span>
       <a href="https://www.instagram.com/hanamiru.art/">my instagram account</a>
       <i class="fa fa-instagram w3-xlarge"></i>
+    </div>
+    <div class="w3-padding-16 w3-center w3-hide-large w3-hide-medium">
+      <button class="w3-button w3-dark-grey w3-padding-large" style="width: 100%;">
+      <span>More at </span><a href="https://www.instagram.com/hanamiru.art/" style="margin-left: 5px;"><i class="fa fa-instagram w3-xlarge"></i></a>
+    </button>
     </div>
     
     
@@ -220,7 +225,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
   
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <!--
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -228,9 +234,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
     <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
   </footer>
-
+  -->
 <!-- END PAGE CONTENT -->
 </div>
 
