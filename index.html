@@ -20,7 +20,32 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .custom-text-grey{color:#898989}
 .custom-hover-dark-grey:hover {background-color:#121212;}
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 </style>
+
 </head>
 <body class="main-background">
 
@@ -165,6 +190,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <img src="/src/images/HB-icon.png" alt="Avatar" class="w3-left w3-circle w3-margin-right w3-white" style="width:80px">
     <p><span class="w3-large w3-margin-right">HB L.</span> The Principal.</p>
     <p>"Your life my inspiration"</p>
+
+    <div class="w3-padding-16">
+      <p>Have something to say about me?</p>
+      <button type="button" class="collapsible w3-button w3-light-grey">Nows ur chance to talk shit</button>
+      <div class="content">
+        <script type="text/javascript" src="https://form.jotform.com/jsform/242122395354049"></script>
+      </div>
+    </div>
+    
+    
   <!-- End About Section -->
   </div>
   
@@ -241,6 +276,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   -->
 <!-- END PAGE CONTENT -->
 </div>
-
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        console.log(content.scrollHeight);
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+</script>
 </body>
 </html>
