@@ -1,260 +1,205 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Hanna Tan</title>
-  <link rel="icon" type="image/x-icon" href="/src/images/HT-icon.png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="index.css">
-</head>
-
-<body class="main-background">
-  <!-- Icon Bar (Sidebar - hidden on small screens) -->
-  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <!-- Avatar image in top left corner -->
-    <img src="/src/images/HT-icon.png" style="width:100%">
-    <a href="#" class="w3-bar-item w3-padding-large custom-hover-dark-grey" style="text-decoration: none;">
-      <i class="fa fa-home w3-xxlarge"></i>
-      <p>HOME</p>
-    </a>
-    <a href="#about" class="w3-bar-item w3-padding-large custom-hover-dark-grey" style="text-decoration: none;">
-      <i class="fa fa-user w3-xxlarge"></i>
-      <p>ABOUT</p>
-    </a>
-    <a href="#photos" class="w3-bar-item w3-padding-large custom-hover-dark-grey" style="text-decoration: none;">
-      <i class="fa fa-eye w3-xxlarge"></i>
-      <p>ART</p>
-    </a>
-    <a href="#contact" class="w3-bar-item w3-padding-large custom-hover-dark-grey" style="text-decoration: none;">
-      <i class="fa fa-envelope w3-xxlarge"></i>
-      <p>CONTACT</p>
-    </a>
-  </nav>
-
-  <!-- Navbar on small screens (Hidden on medium and large screens) -->
-  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">ART</a>
-      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-    </div>
-  </div>
-
-  <!-- Page Content -->
-  <div class="w3-padding-large" id="main">
-    <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center main-background" id="home">
-      <h1 class="w3-jumbo"><span class="w3-hide-small">I'm </span>Hanna</h1>
-      <p>A curious being <br class="w3-hide-large w3-hide-medium"><span class="w3-large w3-hide-small"
-          style="margin: 0 5px;">•</span> "If it makes sense i'll do it"</p>
-      <img src="/src/images/HT-avatar.png" alt="profile-image" width="auto" height="500px">
-      <div class="w3-tiny w3-text-grey">
-        <p>Avatar by Nigel Lim</p>
+  <head>
+    <title>Hanna Tan</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="navbar-container w3-top w3-bar w3-card">
+      <div class="nav-bar" id="myNavbar">
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#experience" class="w3-bar-item w3-button">EXPERIENCE</a>
+        <a href="#artwork" class="w3-bar-item w3-button"> ARTWORK</a>
       </div>
-    </header>
-
-    <!-- About Section -->
-    <div class="w3-content w3-justify custom-text-grey w3-padding-64" id="about">
-      <h2 class="w3-text-light-grey">About Me</h2>
-      <hr style="width:200px" class="w3-opacity">
-      <p>Hanna Tan. Millennial. Based in Malaysia. Not sure what else to write here but this section only looks pretty
-        with lots of text so im just trying my best to add words.
-        Congrats for reading this far though i might as well let u know more.
-        Always a creative by heart but i know it aint gonna get the money i need to survive in this society so i ended
-        up studying IT and eventually became a software engineer in the tech industry.
-        4 years in and i made a choice to switch to a Business Analyst because enabling the team and being the glue
-        bring me more joy. Job title be that but i mostly perform tasks of an Iteration Manager and Delivery Lead.
-        So what happened to me being a creative again? It has become a trait that i could only bring out on rare
-        occassions whenever im not occupied and exhausted from the endless cycle of work and recover from work.
-      </p>
-      <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-      <p class="w3-wide">Coding</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:20%"></div>
-      </div>
-      <p class="w3-wide">Drawing</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:60%"></div>
-      </div>
-      <p class="w3-wide">Procastinating</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-      </div>
-      <p class="w3-wide">Yapping</p>
-      <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:75%"></div>
-      </div><br>
-
-      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">ENFP</span><br>
-          MBTI personality
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">0</span><br>
-          Commissions Done
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">8</span><br>
-          Plushies
-        </div>
-        <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">Too many</span><br>
-          Earth-colour clothings
-        </div>
-      </div>
-
-      <!-- Grid for pricing tables -->
-      <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-white w3-center">
-            <li class="w3-dark-grey w3-xlarge w3-padding-32">Full-time job</li>
-            <li class="w3-padding-16">Corporate slave</li>
-            <li class="w3-padding-16">Me asking too many questions sometimes</li>
-            <li class="w3-padding-16">Will push myself to deliver</li>
-            <li class="w3-padding-16">May or may not burnout</li>
-            <li class="w3-padding-16">
-              <h2>TBD</h2>
-              <span class="w3-opacity">per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <a href="https://www.linkedin.com/in/hannatan-yy/" target="_blank">
-                <button class="w3-button w3-dark-grey w3-padding-large w3-hover-black" style="width: 95%;">
-                  <i class="fa fa-linkedin-square"></i> Hire me to nego</button>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="w3-half">
-          <ul class="w3-ul w3-white w3-center">
-            <li class="w3-dark-grey w3-xlarge w3-padding-32">Tip Jar</li>
-            <li class="w3-padding-16">Personalised gratitude from me</li>
-            <li class="w3-padding-16">Exclusive art content</li>
-            <li class="w3-padding-16">uh</li>
-            <li class="w3-padding-16">Visit the link to find out ;&#41;</li>
-            <li class="w3-padding-16">
-              <h2>$ 2</h2>
-              <span class="w3-opacity">or a subscription of $1 per month</span>
-            </li>
-            <li class="w3-light-grey w3-padding-24">
-              <a href="https://ko-fi.com/hanamiru" target="_blank">
-                <button class="w3-button w3-dark-grey w3-padding-large w3-hover-black"
-                  style="width: 95%;">
-                  <i class="fa fa-coffee"></i> Donate</button>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- End Grid/Pricing tables -->
-      </div>
-
-      <!-- Testimonials -->
-      <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
-      <img src="/src/images/NL-icon.png" alt="Avatar" class="w3-left w3-circle w3-margin-right w3-white"
-        style="width:80px">
-      <p><span class="w3-large w3-margin-right">Nigel Lim.</span> Skinny Legend.</p>
-      <p>"You lose your iconic bottles across the globe... LMAO"</p><br>
-
-      <img src="/src/images/HB-icon.png" alt="Avatar" class="w3-left w3-circle w3-margin-right w3-white"
-        style="width:80px">
-      <p><span class="w3-large w3-margin-right">HB L.</span> The Principal.</p>
-      <p>"Your life my inspiration"</p>
-
-      <div class="w3-padding-16">
-        <p>Have something to say about me?</p>
-        <button type="button" class="collapsible w3-button w3-light-grey"><i class="fa fa-commenting-o"></i> Nows ur
-          chance to talk shit</button>
-        <div class="content">
-          <script type="text/javascript" src="https://form.jotform.com/jsform/242122395354049"></script>
-        </div>
-      </div>
-      <!-- End About Section -->
     </div>
 
-    <!-- Portfolio Section -->
-    <div class="w3-padding-64 w3-content" id="photos">
-      <h2 class="w3-text-light-grey">My Art</h2>
-      <hr style="width:200px" class="w3-opacity">
-
-      <!-- Grid for photos -->
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half">
-          <img src="src/portfolio/IMG_0400.PNG" style="width:100%">
-          <img src="src/portfolio/IMG_0353.PNG" style="width:100%">
+    <!-- Intro section -->
+    <div class="intro w3-container" id="about">
+      <div class="intro-img-container">
+        <img
+          class="w3-hide-small"
+          src="src/images/HT-avatar.png"
+          title="Avatar by Nigel.L"
+        />
+        <img
+          class="w3-hide-large w3-hide-medium intro-icon" 
+          src="src/images/HT-icon.png"
+          title="Avatar by Nigel.L"
+        />
+      </div>
+      <div class="intro-text-container">
+        <span class="w3-jumbo w3-hide-small">Hanna Tan</span><br />
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Hanna Tan</span
+        ><br />
+        <span class="w3-large">A curious being.</span>
+        <p>
+          CS graduate, started off as a full-stack developer before
+          transitioning to a Business Analyst. Often finding myself doing
+          <a href="https://www.youtube.com/watch?v=KClAPipnKqw">the glue work</a
+          >. An artist by heart.
+        </p>
+        <div class="contact-section">
+          <div class="contact-item">
+            <a href="https://drive.google.com/file/d/19EyzX7IeP_mUfUPM-aapCeJJ6eUqpDrq/view?usp=drive_link" target="_blank"
+              ><span class="cv-button w3-padding-small">CV</span></a
+            >
+          </div>
+          <div class="contact-item">
+            <a href="mailto:tyanyin@gmail.com" target="_blank"
+              ><i class="fa fa-envelope fa-fw w3-xlarge"></i
+            ></a>
+          </div>
+          <div class="contact-item">
+            <a href="https://www.linkedin.com/in/hannatan-yy" target="_blank"
+              ><i class="fa fa-linkedin-square fa-fw w3-xlarge"></i
+            ></a>
+          </div>
         </div>
-
-        <div class="w3-half">
-          <img src="src/portfolio/IMG_0330.PNG" style="width:100%">
-          <img src="src/portfolio/IMG_0263.PNG" style="width:100%">
-        </div>
-        <!-- End photo grid -->
       </div>
-      <div class="w3-padding-16 w3-center w3-hide-small">
-        <span>Browse more art at </span>
-        <a href="https://www.instagram.com/hanamiru.art/" target="_blank">my instagram account</a>
-        <i class="fa fa-instagram w3-xlarge"></i>
-      </div>
-      <div class="w3-padding-16 w3-center w3-hide-large w3-hide-medium">
-        <button class="w3-button w3-dark-grey w3-padding-large" style="width: 100%;">
-          <span>More at </span><a href="https://www.instagram.com/hanamiru.art/" target="_blank"
-            style="margin-left: 5px;"><i class="fa fa-instagram w3-xlarge"></i></a>
-        </button>
-      </div>
-
-
-      <!-- End Portfolio Section -->
     </div>
 
-    <!-- Contact Section -->
-    <div class="w3-padding-64 w3-content custom-text-grey" id="contact">
-      <h2 class="w3-text-light-grey">no dont contact me</h2>
-      <hr style="width:200px" class="w3-opacity">
+    <!-- Work Experience Section -->
+    <div
+      class="w3-container work-experience"
+      style="padding: 128px 16px"
+      id="experience"
+    >
+      <h3 class="w3-center">WORK EXPERIENCE</h3>
+      <!-- <div class="timeline-container">
+        <div class="timeline-visual-container">
+          <div class="timeline-string"></div>
+          <a href="#internship"><div class="timeline-round-button"></div></a>
+          <div class="timeline-string"></div>
+          <a onclick="onLinkClick()"
+            ><div class="timeline-round-button"></div
+          ></a>
+          <div class="timeline-string"></div>
+          <a href="#ba"><div class="timeline-round-button"></div></a>
+          <div class="timeline-string"></div>
+        </div>
+        <div class="timeline-labels-container">
+          <p class="timeline-label">2017 Feb</p>
+          <p class="timeline-label">2017 Oct</p>
+          <p class="timeline-label">2022 May</p>
+        </div>
+      </div> -->
 
-      <div class="w3-section">
-        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Malaysia</p>
-        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: [Redacted]</p>
-        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: [Redacted]</p>
-      </div><br>
-      <!-- End Contact Section -->
+      <div class="job-experience-container">
+        <div onclick="onJobExperienceClick('ba')" class="job-experience">
+          <div class="job-overview">
+            <img class="company-logo" src="/src/images/SEEK-logo.png" />
+            <p class="w3-large">Business Analyst / Iteration Manager</p>
+            <span class="w3-medium">SEEK</span><br>
+            <span class="w3-medium">2022 May - 2024 June</span><br>
+            <span class="w3-small">(2 years 2 months)</span>
+          </div>
+          <div class="job-summary" id="ba" style="max-height: 0px;">
+            <ul>
+              <li>Performed project and iteration management across internal teams and stakeholders for various feature rewrites and reimplementation.</li>
+              <li>Coordinated SEO legacy URL redirect project across 3 marketplace by performing project kickoff, delivery management, stakeholder management, and business demo.</li>
+              <li>Manages risks, dependencies and delivery roadmap to ensure developers could deliver on time without blockers and stakeholders are informed of the progress and changes.</li>
+              <li>Supports development team by taking the Scrum Master role. Has experience supporting various teams with different dynamics throughout different phases of team development.</li>
+            </ul>
+            <p><b>Technical skills:</b> JIRA, Confluence, Miro</p>
+          </div>
+          <i class="fa fa-angle-down job-experience-icon w3-xlarge" aria-hidden="true" id="ba-dropdown"></i>
+        </div>
+        <div onclick="onJobExperienceClick('developer')" class="job-experience">
+          <div class="job-overview">
+            <img class="company-logo" src="/src/images/SEEK-logo.png" />
+            <p class="w3-large">Software Developer</p>
+            <span class="w3-medium">SEEK</span><br>
+            <span class="w3-medium">2017 Oct - 2022 April</span><br>
+            <span class="w3-small">(4 years 7 months)</span>
+          </div>
+          <div class="job-summary" id="developer" style="max-height: 0px;">
+            <ul>
+              <li>Initial development for a Mexico blue-collar job platform (https://www.empleolisto.com.mx/)</li>
+              <li>Front-end development for Jobstreet & JobsDB’s role & salary insights</li>
+              <li>Back-end rewrite & migration for Company Profiles & Reviews (https://www.jobstreet.com.my/en/companies)</li>
+              <li>Development team for seek.com and jobstreet.com across 6 APAC countries</li>
+            </ul>
+            <p><b>Tech stack:</b> Javascript (vanilla), SQL, AWS (Elastic Search, DynamoDB, Kinesis, Elastic Beanstalk, Lambda, SNS, SQS, S3), Buildkite, Terraform, React.js, Redux.js, Datadog, Git, Splunk</p>
+          </div>
+          <i class="fa fa-angle-down job-experience-icon w3-xlarge" aria-hidden="true" id="developer-dropdown"></i>
+        </div>
+        <div onclick="onJobExperienceClick('internship')" class="job-experience">
+          <div class="job-overview">
+            <img class="company-logo" src="/src/images/Monster-logo.png" />
+            <p class="w3-large">Internship (Developer)</p>
+            <span class="w3-medium">Monster.com</span><br>
+            <span class="w3-medium">2017 Feb - 2017 July</span><br>
+            <span class="w3-small">(6 months)</span>
+          </div>
+          <div class="job-summary" id="internship" style="max-height: 0px;">
+            <ul>
+              <li>Rebuild company's HR intranet for KL office, specifically employee profile and leave management system.</li>
+            </ul>
+            <p><b>Tech stack:</b> C#, ASP.NET, Angular 2</p>
+          </div>
+          <i class="fa fa-angle-down job-experience-icon w3-xlarge" aria-hidden="true" id="internship-dropdown"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Artwork Section -->
+    <div class="w3-container" style="padding: 128px 16px; background-color: #aca4a4; color:#51493d" id="artwork">
+      <h3 class="w3-center">ARTWORK</h3>
+      <div class="artwork-container">
+        <img class="artwork" src="src/portfolio/IMG_0263.PNG" />
+        <img class="artwork" src="src/portfolio/IMG_0330.PNG" />
+        <img class="artwork" src="src/portfolio/IMG_0353.PNG" />
+        <img class="artwork" src="src/portfolio/IMG_0400.PNG" />
+      </div>
+      <div class="w3-center w3-large">
+        <p>
+          Feel free to support me at
+          <a href="https://ko-fi.com/hanamiru" target="_blank">Ko-Fi</a>
+        </p>
+      </div>
     </div>
 
     <!-- Footer -->
-    <!--
-    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  </footer>
-  -->
-    <!-- END PAGE CONTENT -->
-  </div>
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+    <footer class="w3-center w3-padding-64">
+      <a href="#about" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <p>&copy; 2025 Hanna Tan. All rights reserved.</p>
+    </footer>
 
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
+    <script>
+      function onLinkClick() {
+        document.getElementsById("developer").scrollIntoView();
+      }
+
+      function onJobExperienceClick(jobId){
+        var section = document.getElementById(jobId);
+        var icon = document.getElementById(jobId+"-dropdown");
+        var isExpanded = section.style.maxHeight != "0px";
+        if (isExpanded) {
+          section.style.maxHeight = "0px";
+          icon.classList.remove("fa-angle-up");
+          icon.classList.add("fa-angle-down");
+          
         } else {
-          content.style.maxHeight = content.scrollHeight + "px";
+          section.style.maxHeight = section.scrollHeight + 'px';
+          icon.classList.remove("fa-angle-down");
+          icon.classList.add("fa-angle-up")
         }
-      });
-    }
-  </script>
-</body>
-
+        
+      }
+    </script>
+  </body>
 </html>

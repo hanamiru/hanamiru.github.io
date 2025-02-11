@@ -5,66 +5,230 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-.w3-row-padding img {
-  margin-bottom: 12px;
+.color-palette {
+  color: #f9f8f4;
+  color: #a29a8d;
+  color: #a09a90;
+  color: #767676;
+  color: #515151;
+  color: #84342d;
+  color: #51493d;
+  color: #995f37;
 }
 
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {
-  width: 120px;
-  background: #2f2f2f;
+body,
+html {
+  height: 100%;
+  line-height: 1.8;
+  scroll-behavior: smooth;
 }
 
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {
-  margin-left: 120px;
+footer {
+  background-color: #8d5f5a;
+  color: #f9f8f4;
 }
 
-/* Remove margins from "page content" on small screens */
-.main-background {
-  background-color: #121212;
-  color: white;
+.w3-bar .w3-button {
+  padding: 16px;
 }
 
-.custom-text-grey {
-  color: #898989;
+.navbar-container {
+  background-color: #8d5f5a;
+  color: #f9f8f4;
 }
 
-.custom-hover-dark-grey:hover {
-  background-color: #121212;
+.nav-bar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
 }
 
-@media only screen and (max-width: 600px) {
-  #main {
-    margin-left: 0;
+.w3-bar .w3-bar-item {
+  width: 100%;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 120px 0px;
+  color: #f9f8f4;
+  background-color: #84342d;
+}
+
+.intro-img-container {
+  padding: 0 30px;
+  min-width: 200px;
+  width: 30%;
+}
+.intro-icon {
+  border-radius: 50%;
+}
+
+.intro-text-container {
+  padding: 0 30px;
+  max-width: 800px;
+}
+
+.contact-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-item {
+  width: 45px;
+  border-radius: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+}
+.contact-item a {
+  text-decoration: none;
+}
+.contact-item:hover {
+  background-color: white;
+  border-radius: 5px;
+  color: #84342d;
+}
+
+.cv-button {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.work-experience {
+  background-color: #f9f8f4;
+  color: #51493d;
+}
+
+.timeline-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.timeline-visual-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.timeline-round-button {
+  background-color: #f9f8f4;
+  border: 5px solid #a09a90;
+  border-radius: 50%;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+.timeline-round-button:hover {
+  background-color: #51493d;
+  cursor: pointer;
+}
+.timeline-string {
+  width: 100%;
+  border-bottom: 5px solid #a09a90;
+  height: 17px;
+}
+
+.timeline-labels-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.timeline-label {
+  width: 30px;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.job-experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+.job-experience {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #a09a90;
+  cursor: pointer;
+}
+.job-experience-icon {
+  text-align: center;
+  color: #a09a90;
+}
+.company-logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.job-overview {
+}
+.job-summary {
+  text-align: left;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.job-summary ul {
+  padding-inline-start: 20px;
+}
+
+.artwork-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 0;
+}
+.artwork {
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .intro {
+    flex-wrap: wrap;
+  }
+  .intro img {
+    height: 200px;
+  }
+  .intro-img-container {
+    text-align: center;
+  }
+  .contact-item {
+    background-color: white;
+    color: #84342d;
+  }
+  .job-experience {
+    padding: 30px 20px 10px 20px;
   }
 }
 
-.collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 15px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.collapsible:hover {
-  background-color: #ccc;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+@media (min-width: 601px) {
+  .intro {
+    flex-wrap: nowrap;
+  }
+  .intro img {
+    height: 500px;
+  }
+  .intro-img-container {
+    text-align: right;
+  }
+  .job-experience {
+    padding: 40px 30px 15px 30px;
+  }
 }
