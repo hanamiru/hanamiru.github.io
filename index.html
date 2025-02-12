@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TL2ZZTF2VP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TL2ZZTF2VP");
+    </script>
     <title>Hanna Tan</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,7 +48,7 @@
           title="Avatar by Nigel.L"
         />
         <img
-          class="w3-hide-large w3-hide-medium intro-icon" 
+          class="w3-hide-large w3-hide-medium intro-icon"
           src="src/images/HT-icon.png"
           title="Avatar by Nigel.L"
         />
@@ -52,7 +66,9 @@
         </p>
         <div class="contact-section">
           <div class="contact-item">
-            <a href="https://drive.google.com/file/d/19EyzX7IeP_mUfUPM-aapCeJJ6eUqpDrq/view?usp=drive_link" target="_blank"
+            <a
+              href="https://drive.google.com/file/d/19EyzX7IeP_mUfUPM-aapCeJJ6eUqpDrq/view?usp=drive_link"
+              target="_blank"
               ><span class="cv-button w3-padding-small">CV</span></a
             >
           </div>
@@ -101,61 +117,115 @@
           <div class="job-overview">
             <img class="company-logo" src="/src/images/SEEK-logo.png" />
             <p class="w3-large">Business Analyst / Iteration Manager</p>
-            <span class="w3-medium">SEEK</span><br>
-            <span class="w3-medium">2022 May - 2024 June</span><br>
+            <span class="w3-medium">SEEK</span><br />
+            <span class="w3-medium">2022 May - 2024 June</span><br />
             <span class="w3-small">(2 years 2 months)</span>
           </div>
-          <div class="job-summary" id="ba" style="max-height: 0px;">
+          <div class="job-summary" id="ba" style="max-height: 0px">
             <ul>
-              <li>Performed project and iteration management across internal teams and stakeholders for various feature rewrites and reimplementation.</li>
-              <li>Coordinated SEO legacy URL redirect project across 3 marketplace by performing project kickoff, delivery management, stakeholder management, and business demo.</li>
-              <li>Manages risks, dependencies and delivery roadmap to ensure developers could deliver on time without blockers and stakeholders are informed of the progress and changes.</li>
-              <li>Supports development team by taking the Scrum Master role. Has experience supporting various teams with different dynamics throughout different phases of team development.</li>
+              <li>
+                Performed project and iteration management across internal teams
+                and stakeholders for various feature rewrites and
+                reimplementation.
+              </li>
+              <li>
+                Coordinated SEO legacy URL redirect project across 3 marketplace
+                by performing project kickoff, delivery management, stakeholder
+                management, and business demo.
+              </li>
+              <li>
+                Manages risks, dependencies and delivery roadmap to ensure
+                developers could deliver on time without blockers and
+                stakeholders are informed of the progress and changes.
+              </li>
+              <li>
+                Supports development team by taking the Scrum Master role. Has
+                experience supporting various teams with different dynamics
+                throughout different phases of team development.
+              </li>
             </ul>
             <p><b>Technical skills:</b> JIRA, Confluence, Miro</p>
           </div>
-          <i class="fa fa-angle-down job-experience-icon w3-xlarge" aria-hidden="true" id="ba-dropdown"></i>
+          <i
+            class="fa fa-angle-down job-experience-icon w3-xlarge"
+            aria-hidden="true"
+            id="ba-dropdown"
+          ></i>
         </div>
         <div onclick="onJobExperienceClick('developer')" class="job-experience">
           <div class="job-overview">
             <img class="company-logo" src="/src/images/SEEK-logo.png" />
             <p class="w3-large">Software Developer</p>
-            <span class="w3-medium">SEEK</span><br>
-            <span class="w3-medium">2017 Oct - 2022 April</span><br>
+            <span class="w3-medium">SEEK</span><br />
+            <span class="w3-medium">2017 Oct - 2022 April</span><br />
             <span class="w3-small">(4 years 7 months)</span>
           </div>
-          <div class="job-summary" id="developer" style="max-height: 0px;">
+          <div class="job-summary" id="developer" style="max-height: 0px">
             <ul>
-              <li>Initial development for a Mexico blue-collar job platform (https://www.empleolisto.com.mx/)</li>
-              <li>Front-end development for Jobstreet & JobsDB’s role & salary insights</li>
-              <li>Back-end rewrite & migration for Company Profiles & Reviews (https://www.jobstreet.com.my/en/companies)</li>
-              <li>Development team for seek.com and jobstreet.com across 6 APAC countries</li>
+              <li>
+                Initial development for a Mexico blue-collar job platform
+                (https://www.empleolisto.com.mx/)
+              </li>
+              <li>
+                Front-end development for Jobstreet & JobsDB’s role & salary
+                insights
+              </li>
+              <li>
+                Back-end rewrite & migration for Company Profiles & Reviews
+                (https://www.jobstreet.com.my/en/companies)
+              </li>
+              <li>
+                Development team for seek.com and jobstreet.com across 6 APAC
+                countries
+              </li>
             </ul>
-            <p><b>Tech stack:</b> Javascript (vanilla), SQL, AWS (Elastic Search, DynamoDB, Kinesis, Elastic Beanstalk, Lambda, SNS, SQS, S3), Buildkite, Terraform, React.js, Redux.js, Datadog, Git, Splunk</p>
+            <p>
+              <b>Tech stack:</b> Javascript (vanilla), SQL, AWS (Elastic Search,
+              DynamoDB, Kinesis, Elastic Beanstalk, Lambda, SNS, SQS, S3),
+              Buildkite, Terraform, React.js, Redux.js, Datadog, Git, Splunk
+            </p>
           </div>
-          <i class="fa fa-angle-down job-experience-icon w3-xlarge" aria-hidden="true" id="developer-dropdown"></i>
+          <i
+            class="fa fa-angle-down job-experience-icon w3-xlarge"
+            aria-hidden="true"
+            id="developer-dropdown"
+          ></i>
         </div>
-        <div onclick="onJobExperienceClick('internship')" class="job-experience">
+        <div
+          onclick="onJobExperienceClick('internship')"
+          class="job-experience"
+        >
           <div class="job-overview">
             <img class="company-logo" src="/src/images/Monster-logo.png" />
             <p class="w3-large">Internship (Developer)</p>
-            <span class="w3-medium">Monster.com</span><br>
-            <span class="w3-medium">2017 Feb - 2017 July</span><br>
+            <span class="w3-medium">Monster.com</span><br />
+            <span class="w3-medium">2017 Feb - 2017 July</span><br />
             <span class="w3-small">(6 months)</span>
           </div>
-          <div class="job-summary" id="internship" style="max-height: 0px;">
+          <div class="job-summary" id="internship" style="max-height: 0px">
             <ul>
-              <li>Rebuild company's HR intranet for KL office, specifically employee profile and leave management system.</li>
+              <li>
+                Rebuild company's HR intranet for KL office, specifically
+                employee profile and leave management system.
+              </li>
             </ul>
             <p><b>Tech stack:</b> C#, ASP.NET, Angular 2</p>
           </div>
-          <i class="fa fa-angle-down job-experience-icon w3-xlarge" aria-hidden="true" id="internship-dropdown"></i>
+          <i
+            class="fa fa-angle-down job-experience-icon w3-xlarge"
+            aria-hidden="true"
+            id="internship-dropdown"
+          ></i>
         </div>
       </div>
     </div>
 
     <!-- Artwork Section -->
-    <div class="w3-container" style="padding: 128px 16px; background-color: #aca4a4; color:#51493d" id="artwork">
+    <div
+      class="w3-container"
+      style="padding: 128px 16px; background-color: #aca4a4; color: #51493d"
+      id="artwork"
+    >
       <h3 class="w3-center">ARTWORK</h3>
       <div class="artwork-container">
         <img class="artwork" src="src/portfolio/IMG_0263.PNG" />
@@ -184,21 +254,19 @@
         document.getElementsById("developer").scrollIntoView();
       }
 
-      function onJobExperienceClick(jobId){
+      function onJobExperienceClick(jobId) {
         var section = document.getElementById(jobId);
-        var icon = document.getElementById(jobId+"-dropdown");
+        var icon = document.getElementById(jobId + "-dropdown");
         var isExpanded = section.style.maxHeight != "0px";
         if (isExpanded) {
           section.style.maxHeight = "0px";
           icon.classList.remove("fa-angle-up");
           icon.classList.add("fa-angle-down");
-          
         } else {
-          section.style.maxHeight = section.scrollHeight + 'px';
+          section.style.maxHeight = section.scrollHeight + "px";
           icon.classList.remove("fa-angle-down");
-          icon.classList.add("fa-angle-up")
+          icon.classList.add("fa-angle-up");
         }
-        
       }
     </script>
   </body>
