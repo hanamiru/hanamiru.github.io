@@ -31,10 +31,6 @@ footer {
   color: #f9f8f4;
 }
 
-.w3-bar .w3-button {
-  padding: 16px;
-}
-
 .navbar-container {
   background-color: #8d5f5a;
   color: #f9f8f4;
@@ -45,10 +41,22 @@ footer {
   display: flex;
   justify-content: center;
   max-width: 800px;
+  height: auto;
 }
 
 .w3-bar .w3-bar-item {
+  padding: 16px;
   width: 100%;
+}
+
+.navbar-links{
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar-links:hover{
+  background-color: #694946;
+  color: #f9f8f4;
 }
 
 .intro {
@@ -88,10 +96,9 @@ footer {
   justify-content: center;
   align-items: center;
   line-height: normal;
-}
-.contact-item a {
   text-decoration: none;
 }
+
 .contact-item:hover {
   background-color: white;
   border-radius: 5px;
@@ -192,12 +199,34 @@ footer {
   width: 100%;
   max-width: 500px;
 }
+.kofi-button {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid #f9f8f4;
+  color: #f9f8f4;
+  cursor: pointer;
+}
+.kofi-button:hover{
+  background-color: #767676;
+}
+.kofi-icon{
+  width: 25px;
+  margin-left: 10px;
+  vertical-align: text-top;
+}
 
 .contact {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
+
+
 
 @media (max-width: 600px) {
   .intro {
@@ -207,7 +236,8 @@ footer {
     height: 200px;
   }
   .intro-img-container {
-    text-align: center;
+    margin: 0 auto;
+    width: auto;
   }
   .contact-item {
     background-color: white;
